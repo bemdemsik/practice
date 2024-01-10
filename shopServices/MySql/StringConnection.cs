@@ -11,6 +11,6 @@ namespace shopServices.MySql
 {
     class StringConnection
     {
-        static public readonly string GetStringConnection = "server=localhost;uid=root;pwd=root;database=shopservice;";
+        static public readonly string GetStringConnection = "server=localhost;uid=root;pwd=;database=shopservice;";
     }
 }

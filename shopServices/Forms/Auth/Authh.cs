@@ -14,6 +14,7 @@ using shopServices.MySql;
 using shopServices.Messages;
 using shopServices.Model;
 using shopServices.MainForms;
+using shopServices.MainForms.Sys;
 
 namespace shopServices.Forms.Auth
 {
@@ -47,7 +48,7 @@ namespace shopServices.Forms.Auth
                 }
             }
 
-            if(user.login != textBoxLogin.Text || user.password != textBoxPassword.Text)
+            if (user.login != textBoxLogin.Text || user.password != textBoxPassword.Text)
             {
                 MessageError.Show("Неверные данные");
                 if (groupBox1.Visible)
@@ -59,12 +60,36 @@ namespace shopServices.Forms.Auth
                 labelCapcha.Text = GetTextCapcha();
                 return;
             }
-            switch (user.role)
+            AuthUser.roleUser = user.role;
+            AuthUser.idUser = user.id;
+            AuthUser.fioUser = user.surname + " " + user.name + " " + user.lastname;
+            switch (AuthUser.roleUser)
             {
                 case "Администратор":
                     {
                         this.Hide();
                         AdminAndMaster q = new AdminAndMaster();
+                        q.ShowDialog();
+                        break;
+                    }
+                case "Мастер":
+                    {
+                        this.Hide();
+                        AdminAndMaster q = new AdminAndMaster();
+                        q.ShowDialog();
+                        break;
+                    }
+                case "Управляющий":
+                    {
+                        this.Hide();
+                        Manager q = new Manager();
+                        q.ShowDialog();
+                        break;
+                    }
+                case "Системный администратор":
+                    {
+                        this.Hide();
+                        SysAdmin q = new SysAdmin();
                         q.ShowDialog();
                         break;
                     }

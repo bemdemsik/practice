@@ -41,6 +41,8 @@ namespace shopServices.Forms.Users
             this.labelNextPage = new System.Windows.Forms.Label();
             this.labelPage = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.labelCountRows = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,42 +57,42 @@ namespace shopServices.Forms.Users
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-4, 76);
+            this.dataGridView1.Location = new System.Drawing.Point(-4, 66);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(594, 316);
+            this.dataGridView1.Size = new System.Drawing.Size(1178, 400);
             this.dataGridView1.TabIndex = 100;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // textBoxSerch
             // 
-            this.textBoxSerch.Location = new System.Drawing.Point(12, 40);
+            this.textBoxSerch.Location = new System.Drawing.Point(89, 31);
             this.textBoxSerch.Name = "textBoxSerch";
-            this.textBoxSerch.Size = new System.Drawing.Size(174, 29);
+            this.textBoxSerch.Size = new System.Drawing.Size(225, 29);
             this.textBoxSerch.TabIndex = 101;
             this.textBoxSerch.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // comboBoxOrderBy
             // 
             this.comboBoxOrderBy.FormattingEnabled = true;
-            this.comboBoxOrderBy.Location = new System.Drawing.Point(207, 38);
+            this.comboBoxOrderBy.Location = new System.Drawing.Point(473, 29);
             this.comboBoxOrderBy.Name = "comboBoxOrderBy";
-            this.comboBoxOrderBy.Size = new System.Drawing.Size(174, 32);
+            this.comboBoxOrderBy.Size = new System.Drawing.Size(225, 32);
             this.comboBoxOrderBy.TabIndex = 102;
             this.comboBoxOrderBy.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBoxFilter
             // 
             this.comboBoxFilter.FormattingEnabled = true;
-            this.comboBoxFilter.Location = new System.Drawing.Point(403, 38);
+            this.comboBoxFilter.Location = new System.Drawing.Point(851, 29);
             this.comboBoxFilter.Name = "comboBoxFilter";
-            this.comboBoxFilter.Size = new System.Drawing.Size(174, 32);
+            this.comboBoxFilter.Size = new System.Drawing.Size(225, 32);
             this.comboBoxFilter.TabIndex = 103;
             this.comboBoxFilter.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 398);
+            this.button1.Location = new System.Drawing.Point(12, 472);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 33);
             this.button1.TabIndex = 104;
@@ -101,7 +103,7 @@ namespace shopServices.Forms.Users
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 13);
+            this.label1.Location = new System.Drawing.Point(85, 4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 24);
             this.label1.TabIndex = 105;
@@ -110,25 +112,25 @@ namespace shopServices.Forms.Users
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(203, 11);
+            this.label2.Location = new System.Drawing.Point(469, 2);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 24);
+            this.label2.Size = new System.Drawing.Size(230, 24);
             this.label2.TabIndex = 106;
-            this.label2.Text = "Сортировка";
+            this.label2.Text = "Сортировка по фамилии";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(399, 11);
+            this.label3.Location = new System.Drawing.Point(847, 2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 24);
+            this.label3.Size = new System.Drawing.Size(196, 24);
             this.label3.TabIndex = 107;
-            this.label3.Text = "Фильтрация";
+            this.label3.Text = "Фильтрация по роле";
             // 
             // labelBackPage
             // 
             this.labelBackPage.AutoSize = true;
-            this.labelBackPage.Location = new System.Drawing.Point(246, 402);
+            this.labelBackPage.Location = new System.Drawing.Point(539, 476);
             this.labelBackPage.Name = "labelBackPage";
             this.labelBackPage.Size = new System.Drawing.Size(21, 24);
             this.labelBackPage.TabIndex = 108;
@@ -138,7 +140,7 @@ namespace shopServices.Forms.Users
             // labelNextPage
             // 
             this.labelNextPage.AutoSize = true;
-            this.labelNextPage.Location = new System.Drawing.Point(321, 402);
+            this.labelNextPage.Location = new System.Drawing.Point(616, 476);
             this.labelNextPage.Name = "labelNextPage";
             this.labelNextPage.Size = new System.Drawing.Size(21, 24);
             this.labelNextPage.TabIndex = 109;
@@ -148,7 +150,7 @@ namespace shopServices.Forms.Users
             // labelPage
             // 
             this.labelPage.AutoSize = true;
-            this.labelPage.Location = new System.Drawing.Point(271, 402);
+            this.labelPage.Location = new System.Drawing.Point(566, 476);
             this.labelPage.Name = "labelPage";
             this.labelPage.Size = new System.Drawing.Size(45, 24);
             this.labelPage.TabIndex = 110;
@@ -156,7 +158,7 @@ namespace shopServices.Forms.Users
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(468, 398);
+            this.button2.Location = new System.Drawing.Point(1052, 472);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 33);
             this.button2.TabIndex = 111;
@@ -164,13 +166,32 @@ namespace shopServices.Forms.Users
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // labelCountRows
+            // 
+            this.labelCountRows.AutoSize = true;
+            this.labelCountRows.Location = new System.Drawing.Point(339, 476);
+            this.labelCountRows.Name = "labelCountRows";
+            this.labelCountRows.Size = new System.Drawing.Size(0, 24);
+            this.labelCountRows.TabIndex = 127;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(127, 476);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(206, 24);
+            this.label4.TabIndex = 126;
+            this.label4.Text = "Количество записей: ";
+            // 
             // ShowUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(589, 443);
+            this.ClientSize = new System.Drawing.Size(1173, 511);
             this.ControlBox = false;
+            this.Controls.Add(this.labelCountRows);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.labelPage);
             this.Controls.Add(this.labelNextPage);
@@ -184,7 +205,7 @@ namespace shopServices.Forms.Users
             this.Controls.Add(this.textBoxSerch);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ShowUsers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Просмотр пользователей";
@@ -209,5 +230,7 @@ namespace shopServices.Forms.Users
         private System.Windows.Forms.Label labelNextPage;
         private System.Windows.Forms.Label labelPage;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label labelCountRows;
+        private System.Windows.Forms.Label label4;
     }
 }

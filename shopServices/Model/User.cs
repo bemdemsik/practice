@@ -11,14 +11,14 @@ namespace shopServices.Model
 {
     class User
     {
-        public int id;
-        public string name;
-        public string surname;
-        public string lastname;
-        public string happy;
-        public string telephone;
-        public string login;
-        public string password;
-        public string role;
+        public int id { get; set;  }
+        public string name { get; set; } = string.Empty;
+        public string surname { get; set; } = string.Empty;
+        public string lastname { get; set; } = null;
+        public string happy { get; set; } = null;
+        public string telephone { get; set; } = null;
+        public string login { get; set; } = string.Empty;
+        public string password { get; set; } = string.Empty;
+        public string role { get; set; } = string.Empty;
     }
 }
